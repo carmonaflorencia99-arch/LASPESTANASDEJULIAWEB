@@ -27,7 +27,7 @@ export const images = {
   hero: { src: '/images/hero.jpg', alt: 'Primer plano de una mirada con extensiones de pestañas de volumen' },
   detalle: { src: '/images/detalle.jpg', alt: 'Aplicación de extensiones de pestañas con pinzas, pelo a pelo' },
   modelo: { src: '/images/modelo.jpg', alt: 'Retrato frontal de una modelo con pestañas, cejas y labios trabajados' },
-  julia: { src: null, alt: 'Retrato de Julia en el estudio' },
+  julia: { src: '/images/julia.jpg', alt: 'Julia, fundadora de Las Pestañas de Julia, sonriendo sentada en un sillón' },
   salon: { src: null, alt: 'El salón, luz de tarde' },
 };
 

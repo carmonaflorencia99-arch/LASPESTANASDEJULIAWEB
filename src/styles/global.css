@@ -1165,6 +1165,10 @@ em {
   inset: -10% 0;
 }
 
+.julia__figure .media {
+  object-position: 48% 10%;
+}
+
 .julia__text {
   display: flex;
   flex-direction: column;
