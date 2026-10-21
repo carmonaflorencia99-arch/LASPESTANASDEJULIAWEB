@@ -252,10 +252,6 @@ export const serviceGroups = [
             title: 'Con pinzas',
             text: 'Pelo a pelo, ideal para pequeños retoques en cejas o labio superior.',
           },
-          {
-            title: 'Láser diodo + alejandrita',
-            text: 'Detecta la melanina del folículo sin dañar la piel. Sesiones rápidas (unas piernas enteras en unos 25 minutos) y llevaderas gracias al cabezal refrigerado. Ven rasurada 24 horas antes; las sesiones son cada 5 semanas aprox. y su número depende de cada caso.',
-          },
         ],
       },
       {
