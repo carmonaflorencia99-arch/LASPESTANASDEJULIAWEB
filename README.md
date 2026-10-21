@@ -50,7 +50,7 @@ Los colores y la tipografía son variables CSS al principio de **`src/styles/glo
 
 ## Pendiente antes de publicar
 
-- [ ] Enlaces a Facebook y YouTube (Instagram ya está)
+- [ ] Enlace a YouTube (Instagram y Facebook ya están)
 - [ ] Revisar que los precios de `priceGroups` siguen vigentes
 - [ ] Foto de Julia (`public/images/julia.jpg`, retrato vertical) y del salón (`public/images/salon.jpg`, horizontal)
 - [ ] Páginas legales (privacidad, cookies) y enlazarlas en `Footer.jsx`

@@ -16,7 +16,7 @@ export const site = {
   // Redes. Las que queden vacías no se muestran.
   social: [
     { label: 'Instagram', href: 'https://www.instagram.com/laspestanasdejulia/' },
-    { label: 'Facebook', href: '' },
+    { label: 'Facebook', href: 'https://www.facebook.com/laspestanasdejulia/' },
     { label: 'YouTube', href: '' },
   ],
 };

@@ -468,7 +468,22 @@ em {
 }
 
 .hero__media .media {
-  object-position: 40% 52%;
+  object-position: 58% 45%;
+}
+
+/* En pantallas anchas la foto se amplía hacia la derecha para que el ojo
+   quede junto al titular, no debajo. */
+@media (min-width: 900px) and (min-aspect-ratio: 4/3) {
+  .hero__media .media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 128%;
+    max-width: none;
+    height: 100%;
+    object-position: 0% 42%;
+    transform-origin: 70% 45%;
+  }
 }
 
 .hero__scrim {
