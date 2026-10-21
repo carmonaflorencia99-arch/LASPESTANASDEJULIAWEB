@@ -1,7 +1,8 @@
 import { useRef } from 'react';
 import { gsap, ScrollTrigger, useGSAP, prefersReducedMotion } from '../lib/gsap.js';
 import { useReady } from '../lib/ready.js';
-import { images, services } from '../data/site.js';
+import { images, services, spots } from '../data/site.js';
+import { openService } from '../lib/events.js';
 import Media from './Media.jsx';
 import AnchorLink from './AnchorLink.jsx';
 
@@ -59,14 +60,16 @@ export default function ServiceSpots() {
       <div className="spots__stage">
         <figure className="spots__figure">
           <Media image={images.modelo} tone="rosa" />
-          {services
-            .filter((s) => s.spot)
-            .map((s) => (
+          {spots.map((spot) => {
+            const s = services.find((x) => x.n === spot.n);
+            if (!s) return null;
+            return (
               <AnchorLink
                 key={s.n}
                 href={`#servicio-${s.n}`}
-                className={`spot ${s.spot.x > 50 ? 'spot--right' : ''}`}
-                style={{ left: `${s.spot.x}%`, top: `${s.spot.y}%` }}
+                onNavigate={() => openService(s.n)}
+                className={`spot ${spot.x > 50 ? 'spot--right' : ''}`}
+                style={{ left: `${spot.x}%`, top: `${spot.y}%` }}
                 aria-label={`${s.n} ${s.name}`}
               >
                 <span className="spot__dot">{s.n}</span>
@@ -74,7 +77,8 @@ export default function ServiceSpots() {
                   {s.name}
                 </span>
               </AnchorLink>
-            ))}
+            );
+          })}
         </figure>
       </div>
     </section>

@@ -40,6 +40,11 @@ export default function Reserva() {
           <a className="reserva__address" href={site.mapsHref} target="_blank" rel="noopener noreferrer">
             {site.address.join(', ')}
           </a>
+          <p className="reserva__schedule">
+            {site.schedule.map((line) => (
+              <span key={line}>{line}</span>
+            ))}
+          </p>
           <div className="button-row">
             {hasBooksy ? (
               <>

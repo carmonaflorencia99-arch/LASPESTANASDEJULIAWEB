@@ -37,20 +37,18 @@ npm run preview   # previsualiza /dist
 Casi todo el contenido está en **`src/data/site.js`**:
 
 - **Teléfono, WhatsApp y dirección**
-- **`booksyUrl`**: el enlace directo al perfil de Booksy. Mientras esté vacío, «Reservar» lleva a WhatsApp.
+- **`booksyUrl`**: el enlace al perfil de Booksy (todos los botones «Reservar» llevan ahí)
 - **`schedule`**: el horario
 - **`social`**: Instagram, Facebook y YouTube. Las redes sin enlace no se muestran.
 - **`images`**: las fotos. Ponlas en `public/images/` y escribe aquí la ruta. Si una foto vale `null`, se ve un bloque de color con la descripción de la foto que falta.
-- **`services`**: los servicios y la posición (`x`, `y` en %) de cada punto sobre la foto de la modelo
+- **`serviceGroups`**: los servicios por categoría, con descripción, tipos, duraciones y cuidados (se ven como fichas desplegables)
+- **`spots`**: qué servicios marcan los puntos sobre la foto de la modelo y su posición (`x`, `y` en %)
 - **`faqs`**: las preguntas frecuentes
 
 Los colores y la tipografía son variables CSS al principio de **`src/styles/global.css`**.
 
 ## Pendiente antes de publicar
 
-- [ ] `booksyUrl` en `src/data/site.js`
-- [ ] Horario real
-- [ ] Respuestas de las preguntas frecuentes
 - [ ] Enlaces a redes sociales
 - [ ] Foto de Julia (`public/images/julia.jpg`, retrato vertical) y del salón (`public/images/salon.jpg`, horizontal)
 - [ ] Páginas legales (privacidad, cookies) y enlazarlas en `Footer.jsx`
@@ -70,7 +68,7 @@ src/
     Quote.jsx           Cita fijada que se ilumina palabra a palabra
     Arte.jsx            Titular por líneas y foto que se descubre
     ServiceSpots.jsx    Cinta infinita y foto con puntos de servicio
-    Services.jsx        Lista numerada de servicios
+    Services.jsx        Servicios por categoría, con fichas desplegables
     Julia.jsx           La fundadora (parallax)
     Reserva.jsx         Bloque de reserva
     Faq.jsx             Preguntas frecuentes (acordeón accesible)
