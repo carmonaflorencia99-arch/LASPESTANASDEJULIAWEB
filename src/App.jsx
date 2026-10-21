@@ -11,6 +11,7 @@ import Quote from './components/Quote.jsx';
 import Arte from './components/Arte.jsx';
 import ServiceSpots from './components/ServiceSpots.jsx';
 import Services from './components/Services.jsx';
+import Prices from './components/Prices.jsx';
 import Julia from './components/Julia.jsx';
 import Reserva from './components/Reserva.jsx';
 import Faq from './components/Faq.jsx';
@@ -66,6 +67,7 @@ export default function App() {
         <Arte />
         <ServiceSpots />
         <Services />
+        <Prices />
         <Julia />
         <Reserva />
         <Faq />

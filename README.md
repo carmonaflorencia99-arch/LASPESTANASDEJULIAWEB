@@ -43,13 +43,15 @@ Casi todo el contenido está en **`src/data/site.js`**:
 - **`images`**: las fotos. Ponlas en `public/images/` y escribe aquí la ruta. Si una foto vale `null`, se ve un bloque de color con la descripción de la foto que falta.
 - **`serviceGroups`**: los servicios por categoría, con descripción, tipos, duraciones y cuidados (se ven como fichas desplegables)
 - **`spots`**: qué servicios marcan los puntos sobre la foto de la modelo y su posición (`x`, `y` en %)
+- **`priceGroups`**: la lista de precios por categoría (pestañas, cejas, micropigmentación, depilación, manicura y pedicura)
 - **`faqs`**: las preguntas frecuentes
 
 Los colores y la tipografía son variables CSS al principio de **`src/styles/global.css`**.
 
 ## Pendiente antes de publicar
 
-- [ ] Enlaces a redes sociales
+- [ ] Enlaces a Facebook y YouTube (Instagram ya está)
+- [ ] Revisar que los precios de `priceGroups` siguen vigentes
 - [ ] Foto de Julia (`public/images/julia.jpg`, retrato vertical) y del salón (`public/images/salon.jpg`, horizontal)
 - [ ] Páginas legales (privacidad, cookies) y enlazarlas en `Footer.jsx`
 - [ ] Si se instala analítica (Google Analytics, píxeles…), añadir un banner de cookies
@@ -69,6 +71,7 @@ src/
     Arte.jsx            Titular por líneas y foto que se descubre
     ServiceSpots.jsx    Cinta infinita y foto con puntos de servicio
     Services.jsx        Servicios por categoría, con fichas desplegables
+    Prices.jsx          Precios con pestañas por categoría
     Julia.jsx           La fundadora (parallax)
     Reserva.jsx         Bloque de reserva
     Faq.jsx             Preguntas frecuentes (acordeón accesible)

@@ -13,9 +13,9 @@ export const site = {
 
   schedule: ['Lunes a viernes · 10:30 – 19:30', 'Sábados · 10:00 – 14:30'],
 
-  // TODO: enlaces a las redes. Las que queden vacías no se muestran.
+  // Redes. Las que queden vacías no se muestran.
   social: [
-    { label: 'Instagram', href: '' },
+    { label: 'Instagram', href: 'https://www.instagram.com/laspestanasdejulia/' },
     { label: 'Facebook', href: '' },
     { label: 'YouTube', href: '' },
   ],
@@ -261,7 +261,10 @@ export const serviceGroups = [
       {
         n: '13',
         name: 'Manicura y pedicura',
-        intro: ['Consulta los tratamientos disponibles y sus precios al reservar en Booksy.'],
+        intro: [
+          'Esmaltado semipermanente y tradicional con manicura básica o rusa, baño de gel y decoración de uñas.',
+          'Belleza de pies con pedicura premium (peeling, durezas y masaje) y extensiones de uñas de gel o acrygel. Tienes todos los tratamientos y precios en el apartado de precios.',
+        ],
       },
     ],
   },
@@ -276,6 +279,156 @@ export const spots = [
   { n: '03', x: 37, y: 25 },
   { n: '05', x: 63, y: 25 },
   { n: '09', x: 60, y: 62 },
+];
+
+// ---------------------------------------------------------------------------
+// Precios (de la página de precios de la web anterior).
+// Cada categoría tiene bloques; cada línea: name, price y, si hace falta, note.
+// ---------------------------------------------------------------------------
+export const priceGroups = [
+  {
+    id: 'pestanas',
+    name: 'Pestañas',
+    blocks: [
+      {
+        title: 'Puesta de extensiones',
+        note: 'La sesión dura entre 60 y 90 min',
+        items: [
+          { name: 'Clásicas (pelo a pelo)', price: '63 €' },
+          { name: '2D', price: '73 €' },
+          { name: 'Fantasía', price: '73 €' },
+          { name: 'Volumen ruso', note: '3D / 4D / 5D', price: '83 €' },
+          { name: 'Mega volumen ruso', note: '6D / 8D / 9D', price: '90 €' },
+        ],
+      },
+      {
+        title: 'Relleno de extensiones',
+        note: 'La sesión dura entre 60 y 90 min',
+        items: [
+          { name: 'Clásicas (pelo a pelo)', price: '53 €' },
+          { name: '2D', price: '58 €' },
+          { name: 'Fantasía', price: '58 €' },
+          { name: 'Volumen ruso', note: '3D / 4D / 5D', price: '63 €' },
+          { name: 'Mega volumen ruso', note: '6D / 8D / 9D', price: '65 €' },
+          { name: 'Relleno exprés', note: 'Sesión de 30 min. Máximo a los 20 días de la última sesión', price: '28 €' },
+        ],
+      },
+      {
+        title: 'Otros',
+        items: [
+          { name: 'Light lashes', note: 'Puesta de 40 min', price: '35 €' },
+          { name: 'Retirar extensiones', price: '17 €' },
+          { name: 'Lifting y tinte de pestañas', price: '47 €' },
+          { name: 'Tinte de pestañas', price: '16 €' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'cejas',
+    name: 'Cejas',
+    blocks: [
+      {
+        title: 'Micropigmentación de cejas',
+        items: [
+          { name: 'Microblading', note: 'Incluye revisión a los 30-45 días', price: '250 €' },
+          { name: 'Microshading', note: 'Incluye revisión a los 30-45 días', price: '300 €' },
+          { name: 'Ambas técnicas combinadas', note: 'Incluye revisión a los 30-45 días', price: '350 €' },
+          { name: 'Repaso de tratamientos', price: 'Consultar' },
+        ],
+      },
+      {
+        title: 'Diseño, depilación y laminado',
+        items: [
+          { name: 'Depilación de cejas con pinzas', price: '14 €' },
+          { name: 'Depilación de cejas con hilo', price: '14 €' },
+          { name: 'Tinte clásico / henna', price: '16 €' },
+          { name: 'Depilación con hilo o pinza + tinte o henna', price: '30 €' },
+          { name: 'Laminado de cejas', price: '32 €' },
+          { name: 'Laminado de cejas', note: 'Con tinte o depilación', price: '48 €' },
+          { name: 'Laminado de cejas completo', note: 'Con tinte y depilación', price: '62 €' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'micropigmentacion',
+    name: 'Micropigmentación',
+    blocks: [
+      {
+        title: 'Micropigmentación',
+        note: 'Realizada por Julia',
+        items: [
+          { name: 'Labios', note: 'Incluye revisión a los 30-45 días', price: '300 €' },
+          { name: 'Delineado de ojos', note: 'Incluye revisión a los 30-45 días', price: '300 €' },
+          { name: 'Lunares', note: 'Incluye revisión a los 30-45 días', price: 'Desde 50 €' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'depilacion',
+    name: 'Depilación',
+    blocks: [
+      {
+        title: 'Depilación con hilo',
+        items: [
+          { name: 'Labio superior', price: '7 €' },
+          { name: 'Facial', price: '24 €' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'manos-pies',
+    name: 'Manicura y pedicura',
+    blocks: [
+      {
+        title: 'Belleza de manos',
+        items: [
+          { name: 'Esmaltado semipermanente / tradicional + manicura básica + base de proteína (rubber)', price: '25 €' },
+          { name: 'Esmaltado semipermanente / tradicional + manicura básica + francesa + base de proteína (rubber)', price: '27,50 €' },
+          { name: 'Esmaltado semipermanente / tradicional + manicura rusa + base de proteína (rubber)', price: '29 €' },
+          { name: 'Esmaltado semipermanente / tradicional + manicura rusa + francesa + base de proteína (rubber)', price: '31,50 €' },
+          { name: 'Esmaltado baby boomer + manicura básica + base de proteína (rubber)', price: '34 €' },
+          { name: 'Esmaltado baby boomer + manicura rusa + base de proteína (rubber)', price: '41 €' },
+          { name: 'Baño de gel', price: '38 €' },
+          { name: '1 uña de esmaltado semipermanente', price: '2,50 €' },
+          { name: 'Decoración básica, 1 uña', price: '1,50 €' },
+          { name: 'Decoración premium, 1 uña', price: '2,50 €' },
+          { name: 'Retirar esmaltado semipermanente de otros centros', price: '14 €' },
+        ],
+      },
+      {
+        title: 'Belleza de pies',
+        items: [
+          { name: 'Con esmaltado semipermanente / tradicional', note: 'Arreglo de uñas, cutículas y esmaltado', price: '25 €' },
+          { name: 'Con esmaltado semipermanente / tradicional en francesa', note: 'Arreglo de uñas, cutículas y esmaltado', price: '27,50 €' },
+          { name: 'Con esmaltado semipermanente / tradicional + pedicura premium', note: 'Peeling, durezas y masaje', price: '45 €' },
+          { name: 'Con esmaltado en francesa + pedicura premium', note: 'Peeling, durezas y masaje', price: '47,50 €' },
+        ],
+      },
+      {
+        title: 'Extensiones de uñas',
+        items: [
+          { name: 'Uñas nuevas (gel / acrygel) con esmaltado semipermanente', price: '47 €' },
+          { name: 'Uñas nuevas con esmaltado semipermanente francesa', price: '49,50 €' },
+          { name: 'Uñas nuevas con esmaltado semipermanente, extralargas', price: '57 €' },
+          { name: 'Uñas nuevas con esmaltado semipermanente francesa, extralargas', price: '59,50 €' },
+          { name: 'Relleno acrygel + esmaltado semipermanente', price: '42 €' },
+          { name: 'Relleno acrygel + esmaltado semipermanente francesa', price: '44,50 €' },
+          { name: 'Relleno acrygel + esmaltado semipermanente, extralargas', price: '50 €' },
+          { name: 'Relleno acrygel + esmaltado semipermanente, extralargas + francesa', price: '52,50 €' },
+          { name: 'Decoración básica, 1 uña', price: '1,50 €' },
+          { name: 'Decoración premium, 1 uña', price: '2,50 €' },
+          { name: 'Reparación 1 uña de gel extralarga', price: '5,50 €' },
+          { name: 'Reparación uña rota gel / acrygel', price: '4,20 €' },
+          { name: 'Retirar acrílico / gel / acrygel (sin manicura)', price: '17 €' },
+          { name: 'Retirar acrílico / gel / acrygel (con manicura)', price: '22 €' },
+        ],
+      },
+    ],
+  },
 ];
 
 export const faqs = [
@@ -300,6 +453,7 @@ export const faqs = [
 export const navLinks = [
   { label: 'Inicio', href: '#inicio' },
   { label: 'Servicios', href: '#servicios' },
+  { label: 'Precios', href: '#precios' },
   { label: 'La fundadora', href: '#julia' },
   { label: 'Reservar', href: '#reserva' },
   { label: 'Preguntas', href: '#faq' },
