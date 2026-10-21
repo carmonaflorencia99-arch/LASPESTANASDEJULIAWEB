@@ -1,4 +1,9 @@
-// Sello circular de la marca (versión «clásico beige» de los sellos).
+// Sello circular de la marca (inspirado en el sello «clásico beige»).
+// El texto rodea todo el círculo y se ajusta con textLength, así nunca se corta
+// aunque cambie la fuente.
+const RADIUS = 72;
+const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
+
 export default function Seal({ size = 148, fill = '#DED0BD', ink = '#5E4431', className = '' }) {
   return (
     <svg
@@ -10,23 +15,22 @@ export default function Seal({ size = 148, fill = '#DED0BD', ink = '#5E4431', cl
       aria-label="Sello Las Pestañas de Julia, Valencia"
     >
       <defs>
-        <path id="seal-arc-top" d="M 30 100 A 70 70 0 0 1 170 100" />
-        <path id="seal-arc-bottom" d="M 40 112 A 62 62 0 0 0 160 112" />
+        {/* Círculo completo que empieza arriba y va en el sentido de las agujas del reloj */}
+        <path
+          id="seal-ring"
+          d={`M 100 ${100 - RADIUS} a ${RADIUS} ${RADIUS} 0 1 1 0 ${RADIUS * 2} a ${RADIUS} ${RADIUS} 0 1 1 0 ${-RADIUS * 2}`}
+        />
       </defs>
       <circle cx="100" cy="100" r="96" fill={fill} />
-      <text fill={ink} fontFamily="Cormorant Garamond, serif" fontSize="17" letterSpacing="4">
-        <textPath href="#seal-arc-top" startOffset="50%" textAnchor="middle">
-          LAS PESTAÑAS DE JULIA
-        </textPath>
-      </text>
-      <text fill={ink} fontFamily="Jost, sans-serif" fontSize="9" letterSpacing="4">
-        <textPath href="#seal-arc-bottom" startOffset="50%" textAnchor="middle">
-          VALENCIA
+      <circle cx="100" cy="100" r="54" fill="none" stroke={ink} strokeWidth="0.8" opacity="0.6" />
+      <text fill={ink} fontFamily="Cormorant Garamond, Georgia, serif" fontSize="15" fontWeight="500">
+        <textPath href="#seal-ring" textLength={CIRCUMFERENCE - 6} lengthAdjust="spacing">
+          LAS PESTAÑAS DE JULIA · VALENCIA ·
         </textPath>
       </text>
       <g fill="none" stroke={ink} strokeWidth="1.6" strokeLinecap="round">
-        <path d="M70 96 Q100 114 130 96" />
-        <path d="M76 101 l-3 7M86 105 l-2 8M100 107 v8M114 105 l2 8M124 101 l3 7" />
+        <path d="M74 96 Q100 112 126 96" />
+        <path d="M79 100.5 l-3 7M88 104 l-2 8M100 105.5 v8M112 104 l2 8M121 100.5 l3 7" />
       </g>
     </svg>
   );
