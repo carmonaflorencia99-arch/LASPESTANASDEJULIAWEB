@@ -5,6 +5,7 @@ import { images, services, spots } from '../data/site.js';
 import { openService } from '../lib/events.js';
 import Media from './Media.jsx';
 import AnchorLink from './AnchorLink.jsx';
+import { TapHand } from './Icons.jsx';
 
 const MARQUEE_TEXT = 'Belleza en cada pestaña · Belleza en cada pestaña · ';
 
@@ -58,6 +59,10 @@ export default function ServiceSpots() {
         </div>
       </div>
       <div className="spots__stage">
+        <p className="spots__hint">
+          <TapHand />
+          <span>Pincha en cada número de la foto para ver ese servicio</span>
+        </p>
         <figure className="spots__figure">
           <Media image={images.modelo} tone="rosa" />
           {spots.map((spot) => {

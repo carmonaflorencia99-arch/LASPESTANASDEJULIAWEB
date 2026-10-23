@@ -64,10 +64,10 @@ export const serviceGroups = [
           },
           {
             title: '2D',
-            text: 'Dos extensiones por cada pestaña natural. Siguen siendo naturales, con un toque de volumen y un efecto más tupido: las preferidas de las amantes del efecto rímel.',
+            text: 'Dos extensiones por cada pestaña natural. Siguen siendo naturales, con un toque de volumen y un efecto más tupido: las preferidas de las que quieren más intensidad en la mirada.',
           },
           {
-            title: 'Fantasía',
+            title: 'Híbridas',
             text: 'Nuestro volumen intermedio, entre las clásicas y el volumen ruso. Aporta profundidad y definición; puedes dar color a parte de tus pestañas o colocar «tips».',
           },
           {
@@ -292,7 +292,7 @@ export const priceGroups = [
         items: [
           { name: 'Clásicas (pelo a pelo)', price: '63 €' },
           { name: '2D', price: '73 €' },
-          { name: 'Fantasía', price: '73 €' },
+          { name: 'Híbridas', price: '73 €' },
           { name: 'Volumen ruso', note: '3D / 4D / 5D', price: '83 €' },
           { name: 'Mega volumen ruso', note: '6D / 8D / 9D', price: '90 €' },
         ],
@@ -303,7 +303,7 @@ export const priceGroups = [
         items: [
           { name: 'Clásicas (pelo a pelo)', price: '53 €' },
           { name: '2D', price: '58 €' },
-          { name: 'Fantasía', price: '58 €' },
+          { name: 'Híbridas', price: '58 €' },
           { name: 'Volumen ruso', note: '3D / 4D / 5D', price: '63 €' },
           { name: 'Mega volumen ruso', note: '6D / 8D / 9D', price: '65 €' },
           { name: 'Relleno exprés', note: 'Sesión de 30 min. Máximo a los 20 días de la última sesión', price: '28 €' },

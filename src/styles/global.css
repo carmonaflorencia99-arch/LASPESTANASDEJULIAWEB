@@ -632,6 +632,31 @@ em {
   padding: 0 var(--gutter);
 }
 
+.spots__hint {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 20px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: var(--crema);
+  color: var(--tinta);
+  font-size: clamp(16px, 1.6vw, 18px);
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.spots__hint svg {
+  flex: none;
+  color: var(--terra);
+}
+
 .spots__figure {
   position: relative;
   aspect-ratio: 2000 / 1493;
