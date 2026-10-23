@@ -27,7 +27,7 @@ export default function Reserva() {
   return (
     <section id="reserva" ref={root} className="reserva">
       <div className="reserva__media">
-        <Media image={images.salon} />
+        <Media image={images.mirada} />
       </div>
       <div className="reserva__scrim" aria-hidden="true" />
       <div className="reserva__content">

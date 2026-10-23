@@ -24,7 +24,10 @@ export const site = {
 // Fotos. Pon los archivos en /public/images y escribe aquí la ruta.
 // Si una foto vale null, se muestra un bloque de color con la descripción.
 export const images = {
-  hero: { src: '/images/hero.jpg', alt: 'Primer plano de una mirada con extensiones de pestañas de volumen' },
+  // Portada: foto del nuevo salón (pendiente). Cuando esté, súbela a public/images/salon-nuevo.jpg
+  // y cambia src: null por src: '/images/salon-nuevo.jpg'.
+  hero: { src: null, alt: 'El nuevo salón' },
+  mirada: { src: '/images/hero.jpg', alt: 'Primer plano de una mirada con extensiones de pestañas de volumen' },
   detalle: { src: '/images/detalle.jpg', alt: 'Aplicación de extensiones de pestañas con pinzas, pelo a pelo' },
   modelo: { src: '/images/modelo.jpg', alt: 'Retrato frontal de una modelo con pestañas, cejas y labios trabajados' },
   julia: { src: '/images/julia.jpg', alt: 'Julia, fundadora de Las Pestañas de Julia, sonriendo sentada en un sillón' },
