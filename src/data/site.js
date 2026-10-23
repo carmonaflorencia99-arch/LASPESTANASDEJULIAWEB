@@ -38,7 +38,7 @@ export const images = {
 // ---------------------------------------------------------------------------
 
 const browCare = [
-  'No mojar las cejas en 72 horas; después, aplicar aloe vera natural sin colorantes.',
+  'No mojar las cejas en las siguientes 48 horas; después, aplicar aloe vera natural sin colorantes.',
   'No aplicar cremas ni productos grasos hasta que caigan las costras.',
   'No rascar ni arrancar las costras.',
   'Mantener una higiene correcta: lavar con agua y jabón, sin restregar, y secar a toques.',
@@ -60,7 +60,26 @@ export const serviceGroups = [
         types: [
           {
             title: 'Clásicas pelo a pelo',
-            text: 'Una extensión sobre cada pestaña natural. La opción perfecta si buscas un resultado muy natural, o un efecto rímel. Distintas longitudes y curvaturas para un diseño a medida.',
+            text: 'Una extensión sobre cada pestaña natural, con distintas longitudes y curvaturas para un diseño a medida. Es la opción para quien busca un resultado natural y elegante. Trabajamos tres acabados:',
+            wide: true,
+            variants: [
+              {
+                title: 'Mate',
+                text: 'El efecto más natural. Son extensiones sin brillo, con una textura muy parecida a la de tus propias pestañas, así que nadie notará que llevas extensiones. Ideales si es tu primera vez o si prefieres un look discreto para el día a día.',
+              },
+              {
+                title: 'Efecto rímel',
+                text: 'Como si acabaras de ponerte máscara de pestañas, pero sin tener que hacerlo cada mañana. Tienen un acabado más definido y oscuro que la mate, y siguen viéndose naturales.',
+              },
+              {
+                title: 'Efecto extra rímel',
+                text: 'Nuestras clásicas más intensas. Las extensiones son más gruesas y crean un look mucho más marcado y oscuro, con la mirada muy definida. Son perfectas si te encanta llevar los ojos maquillados.',
+              },
+              {
+                title: 'Light lashes',
+                text: 'Una versión ligera de la puesta clásica, con menos extensiones que una puesta completa, y disponible en los tres acabados. La sesión dura unos 40 minutos y es perfecta para probar las extensiones por primera vez, para una ocasión especial o para quien quiere un toque de definición sin cargar la mirada.',
+              },
+            ],
           },
           {
             title: '2D',
@@ -72,7 +91,11 @@ export const serviceGroups = [
           },
           {
             title: 'Volumen ruso',
-            text: 'Las reinas del volumen: de 3 a 8 o 9 extensiones por pestaña (mega volumen), según el grosor de tu pestaña natural.',
+            text: 'Las reinas del volumen: de 3 a 5 extensiones por cada pestaña natural, según la intensidad que quieras. El resultado es una mirada más poblada y con más intensidad que las clásicas o las 2D.',
+          },
+          {
+            title: 'Mega volumen',
+            text: 'Para las que quieren el máximo impacto: de 6 a 10 extensiones por cada pestaña natural, según lo que desees. Es una mirada muy densa, oscura y llamativa, con un efecto espectacular.',
           },
         ],
         facts: [
@@ -84,14 +107,22 @@ export const serviceGroups = [
         n: '02',
         name: 'Lifting de pestañas',
         intro: [
-          'Eleva la curvatura de tus pestañas y las alarga desde la raíz. Unas almohadillas de silicona ajustadas al párpado estiran y elevan el pelo hasta su máximo punto, en lugar de doblarlo. Es cómodo, rápido e indoloro.',
+          'Eleva tus pestañas desde la raíz y les da una curvatura bonita y duradera, haciendo que se vean visualmente más largas y abriendo la mirada. Usamos unas almohadillas de silicona adaptadas a tu párpado que levantan el pelo hasta su punto máximo. Es cómodo, rápido e indoloro. Al tratarse de un procedimiento químico, es imprescindible mantener las pestañas hidratadas cada día con productos específicos para ello.',
           'En el mismo tratamiento aplicamos tinte, que crea un efecto de espesor e intensifica la mirada. Es perfecto para realzar la mirada sin renunciar a la naturalidad; si tus pestañas son muy cortas, te recomendaremos extensiones clásicas efecto natural.',
+        ],
+        types: [
+          {
+            title: 'Lifting coreano · Lifting Premium',
+            text: 'Una versión más cuidadosa del lifting, pensada para la salud de tus pestañas. Durante la sesión hacemos tres hidrataciones intermedias que nutren el pelo, de modo que las pestañas quedan flexibles y con brillo. Incluye tinte. La sesión dura unos 50 minutos y el resultado se mantiene de 4 a 5 semanas, según tu ciclo natural de pestañas.',
+            wide: true,
+          },
         ],
         facts: [
           { label: 'Sesión', value: 'Unos 60 minutos' },
-          { label: 'Resultado', value: 'Unas 4 semanas, según el ciclo natural del pelo' },
+          { label: 'Resultado', value: 'De 4 a 5 semanas, según el ciclo natural del pelo' },
         ],
         care: [
+          'Hidratar las pestañas a diario con un producto específico; al ser un tratamiento químico, es imprescindible para mantenerlas sanas.',
           'No restregar los ojos.',
           'No dormir boca abajo la primera noche.',
           'No mojarlas durante 8 horas.',
@@ -105,33 +136,6 @@ export const serviceGroups = [
     items: [
       {
         n: '03',
-        name: 'Microblading',
-        intro: [
-          'Maquillaje semipermanente que dibuja la ceja pelo a pelo con pigmentos naturales, para un resultado muy realista. Se realiza a mano, con una pluma desechable de microagujas que imita el trazado de cada pelo.',
-          'Aumenta la densidad de las cejas despobladas, adapta su forma a tu rostro mediante visagismo y te ahorra el maquillaje diario. También permite cambiar el diseño o crear una ceja desde cero en casos de alopecia. El tono se adapta a tu piel, ojos y pelo.',
-        ],
-        facts: [
-          { label: 'Sesión', value: '90 – 120 minutos, con Julia' },
-          { label: 'Resultado', value: '8 – 12 meses, según el tipo de piel' },
-          { label: 'Repaso', value: 'Entre la 4.ª y la 6.ª semana' },
-        ],
-        care: browCare,
-      },
-      {
-        n: '04',
-        name: 'Microshading',
-        intro: [
-          'También llamado ombre brows o sombreado. Con una máquina rotativa introducimos micropuntos de pigmento que crean un efecto de ceja maquillada, tan natural o tan intenso como quieras.',
-          'A diferencia del microblading, que dibuja «pelitos», el shading crea un acabado de polvo o maquillaje. Las dos técnicas se pueden combinar.',
-        ],
-        facts: [
-          { label: 'Sesión', value: '90 – 120 minutos, con Julia' },
-          { label: 'Resultado', value: '8 – 12 meses; cuantas más capas, más duración e intensidad' },
-        ],
-        care: browCare,
-      },
-      {
-        n: '05',
         name: 'Laminado de cejas',
         intro: [
           'Eleva y redirecciona el pelo de la ceja para dar más densidad y un vello ordenado, de forma semipermanente. Fijamos la forma en dos pasos y terminamos siempre con una hidratación de queratina.',
@@ -148,7 +152,7 @@ export const serviceGroups = [
         ],
       },
       {
-        n: '06',
+        n: '04',
         name: 'Diseño y tinte de cejas',
         intro: [
           'Estudiamos tus rasgos con visagismo y creamos un diseño único, moldeando la ceja a tu rostro.',
@@ -156,7 +160,7 @@ export const serviceGroups = [
         ],
       },
       {
-        n: '07',
+        n: '05',
         name: 'Diseño de cejas con henna',
         intro: [
           'Teñimos las cejas con henna natural, que crea un efecto sombreado en la piel. Elegimos el tono según tu pelo y tu piel, dibujamos el diseño con visagismo y rellenamos con henna.',
@@ -164,7 +168,7 @@ export const serviceGroups = [
         ],
         facts: [
           { label: 'Sesión', value: 'Unos 45 minutos' },
-          { label: 'Resultado', value: 'Alrededor de 1 mes en el pelo y de 7 a 15 días en la piel' },
+          { label: 'Resultado', value: 'Alrededor de 1 mes en el pelo. En la piel, depende de los cuidados en casa y del tipo de piel' },
         ],
         care: [
           'Evitar el sol prolongado las primeras horas.',
@@ -174,7 +178,7 @@ export const serviceGroups = [
         ],
       },
       {
-        n: '08',
+        n: '06',
         name: 'Depilación de cejas con hilo',
         intro: [
           'Antes de depilar estudiamos tus cejas con visagismo —forma del rostro, facciones, línea natural y punto de altura— para encontrar la expresión que más te favorece.',
@@ -191,6 +195,34 @@ export const serviceGroups = [
     name: 'Micropigmentación',
     items: [
       {
+        n: '07',
+        name: 'Microblading',
+        intro: [
+          'Maquillaje semipermanente que dibuja la ceja pelo a pelo con pigmentos naturales, para un resultado muy realista. Se realiza a mano, con una pluma desechable de microagujas que imita el trazado de cada pelo.',
+          'Aumenta la densidad de las cejas despobladas, adapta su forma a tu rostro mediante visagismo y te ahorra el maquillaje diario. También permite cambiar el diseño o crear una ceja desde cero en casos de alopecia. El tono se adapta a tu piel, ojos y pelo.',
+        ],
+        facts: [
+          { label: 'Sesión', value: '90 – 120 minutos, con Julia' },
+          { label: 'Resultado', value: '8 – 12 meses, según el tipo de piel' },
+          { label: 'Revisión', value: 'A las 4 – 6 semanas revisamos el resultado y, si es necesario, hacemos un retoque' },
+        ],
+        care: browCare,
+      },
+      {
+        n: '08',
+        name: 'Microshading',
+        intro: [
+          'También llamado ombre brows o sombreado. Con una máquina rotativa introducimos micropuntos de pigmento que crean un efecto de ceja maquillada, tan natural o tan intenso como quieras.',
+          'A diferencia del microblading, que dibuja «pelitos», el shading crea un acabado de polvo o maquillaje. Las dos técnicas se pueden combinar.',
+        ],
+        facts: [
+          { label: 'Sesión', value: '90 – 120 minutos, con Julia' },
+          { label: 'Resultado', value: '8 – 12 meses; cuantas más capas, más duración e intensidad' },
+          { label: 'Revisión', value: 'A las 4 – 6 semanas revisamos el resultado y, si es necesario, hacemos un retoque' },
+        ],
+        care: browCare,
+      },
+      {
         n: '09',
         name: 'Micropigmentación de labios',
         intro: [
@@ -199,7 +231,8 @@ export const serviceGroups = [
         ],
         facts: [
           { label: 'Sesión', value: 'Unas 2 horas' },
-          { label: 'Resultado', value: 'Repaso de color entre los 2 y los 5 años' },
+          { label: 'Resultado', value: 'De 8 meses a 2 años' },
+          { label: 'Revisión', value: 'A las 4 – 6 semanas revisamos el resultado y, si es necesario, hacemos un retoque' },
         ],
         note: 'Tras la sesión puede aparecer una leve inflamación o enrojecimiento, propios del tratamiento.',
       },
@@ -207,12 +240,13 @@ export const serviceGroups = [
         n: '10',
         name: 'Micropigmentación de ojos',
         intro: [
-          'Un delineado en la línea superior del ojo que aporta volumen a las pestañas, luz a la mirada y ayuda a corregir los ojos caídos. Se diseña a medida de los rasgos de cada persona.',
+          'Una línea entre las pestañas que aporta profundidad a la mirada y crea un efecto visual de más densidad de pestañas. Se diseña a medida de los rasgos de cada persona.',
           'Recomendamos marrón oscuro en lugar de negro: no vira a azul o gris y permite adaptar la línea a medida que cambian los rasgos. No se recomienda en pieles extremadamente finas y vascularizadas.',
         ],
         facts: [
           { label: 'Sesión', value: '90 – 120 minutos, solo con Julia' },
           { label: 'Resultado', value: 'Duradero; repaso cada 2 años aprox.' },
+          { label: 'Revisión', value: 'A las 4 – 6 semanas revisamos el resultado y, si es necesario, hacemos un retoque' },
         ],
         care: [
           'Aplicar vaselina con un bastoncillo para hidratar.',
@@ -272,8 +306,8 @@ export const services = serviceGroups.flatMap((g) => g.items);
 export const spots = [
   { n: '01', x: 33.5, y: 38.5 },
   { n: '02', x: 66.5, y: 38.5 },
-  { n: '03', x: 37, y: 25 },
-  { n: '05', x: 63, y: 25 },
+  { n: '07', x: 37, y: 25 },
+  { n: '03', x: 63, y: 25 },
   { n: '09', x: 60, y: 62 },
 ];
 
@@ -294,7 +328,7 @@ export const priceGroups = [
           { name: '2D', price: '73 €' },
           { name: 'Híbridas', price: '73 €' },
           { name: 'Volumen ruso', note: '3D / 4D / 5D', price: '83 €' },
-          { name: 'Mega volumen ruso', note: '6D / 8D / 9D', price: '90 €' },
+          { name: 'Mega volumen ruso', note: '6D a 10D', price: '90 €' },
         ],
       },
       {
@@ -305,7 +339,7 @@ export const priceGroups = [
           { name: '2D', price: '58 €' },
           { name: 'Híbridas', price: '58 €' },
           { name: 'Volumen ruso', note: '3D / 4D / 5D', price: '63 €' },
-          { name: 'Mega volumen ruso', note: '6D / 8D / 9D', price: '65 €' },
+          { name: 'Mega volumen ruso', note: '6D a 10D', price: '65 €' },
           { name: 'Relleno exprés', note: 'Sesión de 30 min. Máximo a los 20 días de la última sesión', price: '28 €' },
         ],
       },
@@ -315,6 +349,7 @@ export const priceGroups = [
           { name: 'Light lashes', note: 'Puesta de 40 min', price: '35 €' },
           { name: 'Retirar extensiones', price: '17 €' },
           { name: 'Lifting y tinte de pestañas', price: '47 €' },
+          { name: 'Lifting coreano (Lifting Premium)', note: 'Con 3 hidrataciones y tinte', price: '59 €' },
           { name: 'Tinte de pestañas', price: '16 €' },
         ],
       },
@@ -324,15 +359,6 @@ export const priceGroups = [
     id: 'cejas',
     name: 'Cejas',
     blocks: [
-      {
-        title: 'Micropigmentación de cejas',
-        items: [
-          { name: 'Microblading', note: 'Incluye revisión a los 30-45 días', price: '250 €' },
-          { name: 'Microshading', note: 'Incluye revisión a los 30-45 días', price: '300 €' },
-          { name: 'Ambas técnicas combinadas', note: 'Incluye revisión a los 30-45 días', price: '350 €' },
-          { name: 'Repaso de tratamientos', price: 'Consultar' },
-        ],
-      },
       {
         title: 'Diseño, depilación y laminado',
         items: [
@@ -352,12 +378,21 @@ export const priceGroups = [
     name: 'Micropigmentación',
     blocks: [
       {
+        title: 'Micropigmentación de cejas',
+        items: [
+          { name: 'Microblading', note: 'Incluye revisión a los 30-45 días', price: '250 €' },
+          { name: 'Microshading', note: 'Incluye revisión a los 30-45 días', price: '300 €' },
+          { name: 'Ambas técnicas combinadas', note: 'Incluye revisión a los 30-45 días', price: '350 €' },
+          { name: 'Repaso de tratamientos', price: 'Consultar' },
+        ],
+      },
+      {
         title: 'Micropigmentación',
         note: 'Realizada por Julia',
         items: [
           { name: 'Labios', note: 'Incluye revisión a los 30-45 días', price: '300 €' },
           { name: 'Delineado de ojos', note: 'Incluye revisión a los 30-45 días', price: '300 €' },
-          { name: 'Lunares', note: 'Incluye revisión a los 30-45 días', price: 'Desde 50 €' },
+          { name: 'Lunares', price: 'Desde 50 €' },
         ],
       },
     ],
@@ -434,7 +469,7 @@ export const faqs = [
   },
   {
     q: '¿Qué diferencia hay entre extensiones y lifting?',
-    a: 'Con el lifting elevamos y alargamos desde la raíz tus pestañas naturales y las teñimos; dura unas 4 semanas. Con las extensiones colocamos una o varias extensiones sobre cada pestaña natural. Si tus pestañas son muy cortas y buscas un resultado natural, te recomendaremos extensiones clásicas efecto natural.',
+    a: 'Con el lifting elevamos desde la raíz tus pestañas naturales, que se ven visualmente más largas, y las teñimos; dura de 4 a 5 semanas. Con las extensiones colocamos una o varias extensiones sobre cada pestaña natural. Si tus pestañas son muy cortas y buscas un resultado natural, te recomendaremos extensiones clásicas efecto natural.',
   },
   {
     q: '¿Microblading o microshading?',

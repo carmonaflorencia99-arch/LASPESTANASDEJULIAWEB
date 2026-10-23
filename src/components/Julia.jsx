@@ -37,7 +37,7 @@ export default function Julia() {
         <Reveal stagger={0.12} className="julia__body">
           <p className="body-text">
             Julia fundó el primer salón de Valencia especializado en extensiones de pestañas. Artista en pestañas y
-            micropigmentación, imparte formación a nivel nacional, y clientas de distintas partes del mundo vienen para
+            micropigmentación, recibe clientas de distintas partes del mundo que vienen para
             que sea ella quien perfeccione su mirada.
           </p>
           <p className="body-text">Los trabajos de micropigmentación solo pasan por sus manos.</p>

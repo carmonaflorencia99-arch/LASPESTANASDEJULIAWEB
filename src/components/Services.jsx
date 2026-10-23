@@ -42,9 +42,19 @@ function ServiceItem({ s, isOpen, onToggle }) {
               {s.types && (
                 <ul className="service__types">
                   {s.types.map((t) => (
-                    <li key={t.title}>
+                    <li key={t.title} className={t.wide ? 'is-wide' : undefined}>
                       <h5>{t.title}</h5>
                       <p>{t.text}</p>
+                      {t.variants && (
+                        <ul className="service__variants">
+                          {t.variants.map((v) => (
+                            <li key={v.title}>
+                              <h6>{v.title}</h6>
+                              <p>{v.text}</p>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </li>
                   ))}
                 </ul>
